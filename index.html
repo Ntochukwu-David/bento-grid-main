@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  <title>Frontend Mentor | Bento grid</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body{padding-top:50px;
+    }
+    main{background-color:rgb(251, 246, 246);
+         height:700px;
+         width:900px;
+         margin: auto;
+         display: flex;
+    }
+    .box-1{height:600px;
+           width:300px;
+           font-size:25px;
+           font-weight: 400;
+           font-family:"Dm sans"sans-serif;
+    }
+    .box-2{height:650px;
+           width:400px;
+           display: flex;
+           flex-direction: column;
+           margin-left:10px;
+    }
+    .box-22{background-color:hsl(256, 67%, 59%);
+            padding:20px;height:170px;width:360px;border-radius:10px;
+    }
+    .box-3{display:flex;
+           margin-top:10px;
+    }
+    .box-4{height:410px;width:200px;margin-left:10px;}
+    .box-5{height:300px;width:610px;margin-top:10px;display:flex;}
+    .div-1{background-color: aliceblue;height:190px;width:150px;
+           padding:20px;margin-right:10px;overflow:hidden;border-radius:10px;}
+    .div-2{background-color:hsl(39, 100%, 71%);height:219px;padding:10px;
+           padding-top:1px;width:180px;overflow:hidden;border-radius:10px;}
+    .div-3{background-color:hsl(254, 88%, 90%);height:410px;padding-top:1px;
+           padding:20px;overflow:hidden;border-radius:10px;}
+    .div-4{background-color:white;height:200px;width:150px;
+           padding:20px;border-radius:10px;}
+    .div-5{background-color:hsl(256, 67%, 59%);height:200px;margin-left:10px;
+           padding:20px;display:flex;border-radius:10px;}
+    .para-1{font-size:20px;
+            color:hsl(0, 0%, 7%);
+            font-weight: 400;
+            font-family:"Dm sans",sans-serif;
+    }
+    .para-2{font-size:30px;
+            color:white;
+            font-family:"Dm sans",sans-serif;
+            font-weight:500;
+            line-height:30px;
+    }
+    .para-3{font-size:30px;
+            color:hsl(0, 0%, 7%);
+            font-family:"Dm sans",sans-serif;
+            font-weight:500;
+            line-height:20px;
+    }
+    @media (max-width:900px){
+      body{padding:0%;width:400px;}
+      main{
+        flex-direction: column;
+        height:2371px;
+        width:300px;
+      }
+      .box-2{margin-top:10px;margin-left:0%;}
+      .box-22{width:260px;height:300px;}
+      .box-3{flex-direction:column;}
+      .box-4{margin-left:0%;}
+      .box-5{flex-direction:column;}
+      .div-1{width:260px;height:150px;}
+      .div-2{width:280px;height:300px;margin-top:10px;}
+      .div-3{margin-top:660px;width:260px;}
+      .div-4{width:300px;;}
+      .div-5{margin-left:0%;margin-top:10px;height:300px;width: 260px;flex-direction: column;justify-items: center;}
+    }
+  
+  </style>
+</head>
+<body>
+  <main>
+    <div class="box-1">
+      <div style="background-color: hsl(31, 66%, 93%);padding:30px;height:230px;padding-top:0.1px;border-radius:10px;">
+        <p class="para-1">Create and<br> schedule<br>contents <br><span style="color:#7650dc">quicker.</span></p>
+        <img src="assets/images/illustration-create-post.webp" alt="create" style="width:200px;height:80px;">
+      </div>
+      <div  style="background-color: hsl(39, 100%, 71%);padding:30px;height:300px;margin-top:10px;padding-top:0.1px;border-radius:10px;">
+        <p class="para-1">Wrte your<br> content<br>using AI</p>
+        <img src="assets/images/illustration-ai-content.webp" alt="AI content" style="width:180px;height:180px;">
+      </div>
+    </div>
+    <div class="box-2">
+      <div class="box-22">
+        <center>
+         <p class="para-2">Social Media<span style="color:hsl(39, 100%, 71%);"> 10x</span><br> Faster with AI</p>
+         <img src="assets/images/illustration-five-stars.webp" alt="five star" style="width:100px;">
+         <p style="color: hsl(254, 88%, 90%);">Over 4,000 5-star reviews</p>
+        </center>
+      </div>
+      <div class="box-3">
+        <div class="div-1">
+          <img src="assets/images/illustration-multiple-platforms.webp" alt="platforms" style="width:200px;">
+          <p class="para-1"> Manage multiple accounts and platforms.</p>
+        </div>
+        <div class="div-2">
+          <p class="para-1">Maintain a consistent <br> posting schedule</p>
+          <img src="assets/images/illustration-consistent-schedule.webp" alt="illustration-consistent-schedule" style="width:180px;height:160px;">
+        </div>
+      </div>
+      <div class="box-5">
+        <div class="div-4">
+          <p class="para-3">>56% <br><span style="font-size:16px;font-weight:0;">faster audience growth</span></p>
+          <img src="assets/images/illustration-audience-growth.webp" alt="illustration-audience-growth" style="height:40px;width:140px;">
+        </div>
+          <div class="div-5">
+            <img src="assets/images/illustration-grow-followers.webp" alt="illustration-grow-followers" style="height:190px;width:190px;">
+            <p class="para-2">Grow followers with non-stop content</p>
+         </div>
+      </div>
+    </div>
+    <div class="box-4">
+      <div class="div-3">
+        <p style="font-size:20px;">Schedule to social media.</p>
+        <img src="assets/images/illustration-schedule-posts.webp" alt="illustration-schedule-posts" style="height:200px;width:250px;">
+        <p>Optimize post timings to publish <br> content at the perfect time for <br> your audience.</p>
+      </div>
+    </div> 
+  </main>
+</body>
+</html>
